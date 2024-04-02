@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  root 'blog_posts#index'
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_up: 'signup' }
   get 'logout', to: 'pages#logout', as: 'logout'
@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :account, only: [:index, :update]
   resources :billing_portal, only: [:new, :create]
   resources :blog_posts, controller: :blog_posts, path: "blog", param: :slug
+  resources :blog_posts, only: [:show, :index]
+
 
   # static pages
   pages = %w[
@@ -29,5 +31,8 @@ Rails.application.routes.draw do
 
     # convenience helper
     get 'admin', to: 'admin/dashboard#index'
+
+    # about page
+    get 'about', to: 'pages#about'
   end
 end

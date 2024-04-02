@@ -1,5 +1,5 @@
-ADMIN_EMAIL: support@speedrail.com
-COMPANY_NAME: Speedrail
+ADMIN_EMAIL: carlosearbona@gmail.com
+COMPANY_NAME: Carlos Arbona
 POSTMARK_API_TOKEN: xxxx-yyy-zzzz
 development:
   BASE_URL: http://localhost:3000
@@ -7,7 +7,7 @@ development:
   STRIPE_PUBLISHABLE_KEY:
   STRIPE_SECRET_KEY:
 production:
-  BASE_URL: https://speedrail.com
+  BASE_URL: https://carlosarbona.com
   STRIPE_PRODUCT_PRICE_ID:
   STRIPE_PUBLISHABLE_KEY:
   STRIPE_SECRET_KEY:

@@ -57,7 +57,7 @@ class BlogPostsController < ApplicationController
 
   # Only allow a list of trusted parameters through, but add :body, and use slug instead of id in the URL.
   def blog_post_params
-    params.require(:blog_post).permit(:title, :slug, :description, :body, :cover_image, :draft)
+    params.require(:blog_post).permit(:title, :slug, :body, :cover_image, :draft)
   end
 
   def require_admin!

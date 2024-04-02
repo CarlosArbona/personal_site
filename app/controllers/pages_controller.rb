@@ -12,4 +12,8 @@ class PagesController < ApplicationController
     @page_key = request.path[1..]
     render "pages/#{@page_key}"
   end
+
+  def about
+  
+  end
 end

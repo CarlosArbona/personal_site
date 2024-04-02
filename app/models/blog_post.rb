@@ -3,7 +3,7 @@ class BlogPost < ApplicationRecord
   has_rich_text :body
   validates :slug, uniqueness: true
   before_validation :generate_unique_slug
-  validates_presence_of :title, :slug, :body, :description
+  validates_presence_of :title, :slug, :body,
 
   def to_param
     slug
