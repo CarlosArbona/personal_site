@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :subscribe, only: [:index]
   resources :dashboard, only: [:index]
   resources :account, only: [:index, :update]
-  resources :billing_portal, only: [:new, :create]
+  #resources :billing_portal, only: [:new, :create]
   resources :blog_posts, controller: :blog_posts, path: "blog", param: :slug
   resources :blog_posts, only: [:show, :index]
 
