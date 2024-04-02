@@ -5,7 +5,7 @@ class BlogPostsController < ApplicationController
 
   # GET /blog_posts
   def index
-    @blog_posts = BlogPost.where(draft: false).order(created_at: :asc)
+    @blog_posts = BlogPost.where(draft: false).order(created_at: :desc)
     @drafts = BlogPost.where(draft: true).order(created_at: :desc)
   end
 
