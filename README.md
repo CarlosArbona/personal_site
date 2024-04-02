@@ -126,3 +126,4 @@ config.action_mailer.postmark_settings = { api_token: ENV['POSTMARK_API_TOKEN'] 
 
 ## Contributing
 anyone is welcome to submit a pull request with improvements of any kind.
+# personal_site
